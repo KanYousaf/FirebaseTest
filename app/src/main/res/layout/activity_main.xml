@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="com.example.kanwalpc.firebaseproject.MainActivity">
+
+    <TextView
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to My App" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+        <EditText
+            android:layout_marginTop="10dp"
+            android:id="@+id/userNameEt"
+            android:hint="Enter User Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+        <EditText
+            android:inputType="textPassword"
+            android:layout_marginTop="10dp"
+            android:id="@+id/passwordEt"
+            android:hint="Enter Password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+        <Button
+            android:layout_marginTop="10dp"
+            android:text="Sign-Up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/sign_upButton"
+            android:onClick="sign_up_clicked"/>
+        <ProgressBar
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/progress_bar"
+            style="@android:style/Widget.Holo.Light.ProgressBar.Horizontal"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/sign_in_tv"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:layout_gravity="center_horizontal"
+        android:text="Already Registered? Sign-in here!! "/>
+</LinearLayout>
